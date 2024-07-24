@@ -1,0 +1,148 @@
+/* Custom button styles */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Custom input styles */
+.input-custom {
+    border-color: #007bff;
+}
+
+/* Custom select styles */
+.select-custom {
+    border-color: #007bff;
+}
+
+/* Custom date range styles */
+.date-range-custom {
+    border-color: #007bff;
+}
+
+/* Custom table styles */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are collapsed */
+}
+
+/* Table header cells */
+.column-header {
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text */
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table body cells */
+.column-data {
+    padding: 12px;
+    text-align: center;
+    color: #343a40; /* Dark text color */
+}
+
+/* Custom header styles */
+.actions-header {
+    text-align: center; /* Center the text */
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px; /* Add some padding for better spacing */
+}
+
+/* Custom cell styles for actions */
+.actions-cell {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Adjust button sizes */
+.btn-small {
+    padding: 4px 8px;
+    font-size: 0.875rem; /* Smaller font size */
+}
+/* Custom button styles */
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Custom input styles */
+.input-custom {
+    border-color: #007bff;
+}
+
+/* Custom select styles */
+.select-custom {
+    border-color: #007bff;
+}
+
+/* Custom date range styles */
+.date-range-custom {
+    border-color: #007bff;
+}
+
+/* Custom table styles */
+.table-custom {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are collapsed */
+}
+
+/* Table header cells */
+.column-header {
+    background-color: #007bff; /* Primary color */
+    color: #fff; /* White text */
+    padding: 12px;
+    text-align: center;
+}
+
+/* Table body cells */
+.column-data {
+    padding: 12px;
+    text-align: center;
+    color: #343a40; /* Dark text color */
+}
+
+/* Custom header styles */
+.actions-header {
+    text-align: center; /* Center the text */
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px; /* Add some padding for better spacing */
+}
+
+/* Custom cell styles for actions */
+.actions-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically in the center */
+    gap: 8px;
+    padding: 12px; /* Ensure padding matches other cells */
+}
+
+/* Adjust button sizes */
+.btn-small {
+    padding: 4px 8px;
+    font-size: 0.875rem; /* Smaller font size */
+}

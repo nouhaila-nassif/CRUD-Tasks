@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { AddTaskComponent } from '../add-task/add-task.component';
+import { TasksService } from '../../services/tasks.service';
 export interface PeriodicElement {
   title: string;
   user: string;
@@ -41,33 +42,34 @@ export class ListTasksComponent implements OnInit {
     {name:"Complete" , id:1},
     {name:"In-Prossing" , id:2},
   ]
-  constructor(public dialog: MatDialog ,private fb:FormBuilder) { }
+  constructor(private service:TasksService, public dialog :MatDialog ) { }
 
   ngOnInit(): void {
-    this.createform()
+    this.getAllTasks()
+
   }
 
-  createform() {
-    this.tasksFilter = this.fb.group({
-      title:[''],
-      userId:[''],
-      fromDate:[''],
-      toDate:['']
-    })
-  }
 
   getAllTasks() {
+    this.service.getAllTasks().subscribe(res =>{
+
+    },error =>{
+       
+    })
 
   }
-  addTask() {
-      const dialogRef = this.dialog.open(AddTaskComponent, {
-        width: '750px',
-      });
-  
-      dialogRef.afterClosed().subscribe(result => {
-        if(result) {
-          this.getAllTasks()
-        }
-      })
+  addTask(){
+    const dialogRef = this.dialog.open(AddTaskComponent, {
+      width: '600px', // largeur du dialog
+      height: '600px',
+      data:"data"
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    });
   }
-}
+
+  }
+  
+
