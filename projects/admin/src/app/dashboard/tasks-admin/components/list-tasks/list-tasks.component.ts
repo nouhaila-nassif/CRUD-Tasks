@@ -11,6 +11,7 @@ export interface PeriodicElement {
   id: string;
   deadline: string;
   status: string;
+  position: string;
 }
 
 @Component({
@@ -63,7 +64,8 @@ export class ListTasksComponent implements OnInit {
     let newTasks = data.map(item=>{
       return {
         ...item,
-        user:item.userId.username
+        user:item.userId.username,
+        position: `https://crud-1-c52z.onrender.com/${item.image}` 
 
       }
     })

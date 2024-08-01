@@ -45,7 +45,6 @@ export class AddTaskComponent implements OnInit {
   {
     this.fileName=event.target.value
     this.newTaskForm.get('image')?.setValue(event.target.files[0])
-    console.log(event)
   }
   createTask(){
     this.spinner.show()
